@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid Margin="0,-14,0,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFE3FD9E" Offset="0.582"/>
+                <GradientStop Color="#FFAD75CD"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Content="ADD NEW ENTRY" HorizontalAlignment="Left" Margin="80,135,0,0" VerticalAlignment="Top" Height="43" Width="232" FontSize="20" FontFamily="Century" Background="#FFFFEF8B"/>
+        <Button Content="MODIFY ENTRY" HorizontalAlignment="Left" Margin="80,283,0,0" VerticalAlignment="Top" Height="41" Width="232" Click="Button_Click" FontSize="20" FontFamily="Century" Background="#FFBBE8F5"/>
+        <Button Content="SHOW ALL ENTRY" HorizontalAlignment="Left" Margin="80,353,0,0" VerticalAlignment="Top" Height="41" Width="232" FontSize="20" FontFamily="Century" Background="#FFC6FF9F"/>
+        <Button Content="DELETE OLD ENTRY" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Center" Height="41" Width="232" FontSize="20" FontFamily="Century" Background="#FFFF766F" Click="Button_Click"/>
+        <Label Content="MENU" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="210" Height="72" FontSize="72" FontFamily="Cambria Math" FontWeight="Normal" FontStyle="Normal" Foreground="#FF173029" RenderTransformOrigin="0.643,0.251" Background="{x:Null}"/>
+        <Button Content="LOGOUT" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Height="30" Width="80" Background="#FFFBF7F7" Foreground="#FF123BF0" FontSize="16" FontFamily="Lucida Sans Unicode" FontWeight="Bold" Click="Button_Click_1"/>
+        <Calendar HorizontalAlignment="Left" Margin="593,11,0,0" VerticalAlignment="Top" Height="168" Width="197" Background="{x:Null}" Foreground="#FFFBCCCC" FontFamily="Cambria" FontSize="14" FontWeight="Bold" FontStyle="Normal">
+            <Calendar.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA3AEB9"/>
+                    <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                    <GradientStop Color="#FF718597" Offset="0.375"/>
+                    <GradientStop Color="#FF72B0DE" Offset="1"/>
+                </LinearGradientBrush>
+            </Calendar.BorderBrush>
+        </Calendar>
+
+    </Grid>
+</Window>

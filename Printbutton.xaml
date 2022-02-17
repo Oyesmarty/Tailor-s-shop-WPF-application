@@ -1,0 +1,78 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="WpfApp1.Printbutton"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"  >
+
+    <Grid x:Name="print" Margin="0,0,0,-78" Background="White">
+        <Label Content="               SAHIL TAILORS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="844" Height="78" FontSize="48" FontFamily="Constantia" FontWeight="Bold" FontStyle="Normal" Margin="0,1,0,0">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC8E3E8" Offset="0.329"/>
+                    <GradientStop Color="#FFC94F6B" Offset="0.918"/>
+                </LinearGradientBrush>
+            </Label.Background>
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB1818" Offset="0.394"/>
+                    <GradientStop Color="#FF471717" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <TextBlock HorizontalAlignment="Left" Margin="33,162,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.543,0.592"/>
+        <TextBlock HorizontalAlignment="Left" Margin="267,159,0,0" Text="Address" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="609,159,0,0" Text="Contact" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25"><Run Text="Total Bill"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="328,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16"><Run Text="Advance Paid"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="328,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Amount Payable"/><LineBreak/><Run/></TextBlock>
+        <Label Content="                                        Invoice" HorizontalAlignment="Left" VerticalAlignment="Top" Width="542" Height="49" FontSize="36" FontFamily="Constantia" FontWeight="Bold" FontStyle="Normal" Background="{x:Null}" Margin="220,12,0,0">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB1818" Offset="0.394"/>
+                    <GradientStop Color="#FF471717" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <TextBlock HorizontalAlignment="Left" Margin="33,217,0,0" Text="No. of Clothes" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,262,0,0" Text="Cost Per Clothes" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.509,0.501"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,306,0,0" Text="Material Cost" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,355,0,0" Text="Other Cost" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="328,208,0,0" Text="Date" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="328,264,0,0" Text="Time" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button HorizontalAlignment="Left" Margin="494,429,0,0" VerticalAlignment="Top" Click="Button_Click" Width="57" Background="{x:Null}">
+            <materialDesign:PackIcon Kind="Printer" VerticalAlignment="Center" RenderTransformOrigin="0.406,0.625"/>
+        </Button>
+        <Label Content="Thank you for your Order" HorizontalAlignment="Left" VerticalAlignment="Top" Width="442" Height="49" FontSize="36" FontFamily="Constantia" FontWeight="Bold" FontStyle="Normal" Margin="177,479,0,0" Background="{x:Null}">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB1818" Offset="0.394"/>
+                    <GradientStop Color="#FF471717" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Margin="129,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <TextBox x:Name="clothes" HorizontalAlignment="Left" Margin="129,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <TextBox x:Name="clothescost" HorizontalAlignment="Left" Margin="129,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <TextBox x:Name="material_cost" HorizontalAlignment="Left" Margin="129,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <TextBox x:Name="other_cost" HorizontalAlignment="Left" Margin="129,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <TextBox x:Name="total_bill" HorizontalAlignment="Left" Margin="129,401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <TextBox x:Name="address" HorizontalAlignment="Left" Margin="328,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" FontWeight="Bold"/>
+        <TextBox x:Name="advance_paid" HorizontalAlignment="Left" Margin="431,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <TextBox x:Name="amount_payable" HorizontalAlignment="Left" Margin="431,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <TextBox x:Name="contact" HorizontalAlignment="Left" Margin="657,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="653,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Text="                                                                                                                                                                                                 Mobile No. 9321024084"/>
+        <materialDesign:TimePicker HorizontalAlignment="Left" Margin="431,250,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
+        <DatePicker x:Name="date" HorizontalAlignment="Left" Margin="431,208,0,0" VerticalAlignment="Top" Width="120"  AllowDrop="True" Cursor="Hand" AutomationProperties.Name="date"/>
+        <Button x:Name="Add" HorizontalAlignment="Left" Margin="406,429,0,0" VerticalAlignment="Top" Click="Button_Click_1" Background="{x:Null}">
+            <materialDesign:PackIcon Kind="Add"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="315,429,0,0" VerticalAlignment="Top" BorderBrush="Black" Background="White" Click="Button_Click_2">
+            <materialDesign:PackIcon Kind="DeleteCircle"/>
+        </Button>
+
+    </Grid>
+</UserControl>

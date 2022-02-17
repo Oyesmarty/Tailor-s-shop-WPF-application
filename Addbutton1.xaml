@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="WpfApp1.Addbutton1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FFCFFFDC" Margin="0,0,0,-70">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="32,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.328,0.752"><Run Language="en-in" Text="NAME" Foreground="black"/></TextBlock>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Margin="110,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
+        <TextBlock HorizontalAlignment="Left" Margin="360,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56"><Run Language="en-in" Text="CONTACT" Foreground="Black"/></TextBlock>
+        <TextBox x:Name="contact" HorizontalAlignment="Left" Margin="451,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" RenderTransformOrigin="1.167,0.564"><Run Language="en-in" Text="ADDRESS" Foreground="Black"/></TextBlock>
+        <TextBox x:Name="address" HorizontalAlignment="Left" Margin="110,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,118,0,0" Text="Measurement of Top or Blouse" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,153,0,0" Text="Length" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,241,0,0" Text="Chest" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="577,198,0,0" Text="Waist" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="577,153,0,0" Text="Hipp" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.097,0.313"/>
+        <TextBlock HorizontalAlignment="Left" Margin="138,153,0,0" Text="Sleevs Lenght" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="282,153,0,0" Text="Sleevs Bottom" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="length" HorizontalAlignment="Left" Margin="73,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <TextBox x:Name="frontneck" HorizontalAlignment="Left" Margin="503,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <TextBox x:Name="waistlenght" HorizontalAlignment="Left" Margin="217,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <TextBox x:Name="hipplength" HorizontalAlignment="Left" Margin="372,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.085,0.561"/>
+        <TextBox x:Name="sleevslenght" HorizontalAlignment="Left" Margin="217,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" RenderTransformOrigin="-0.043,0.601"/>
+        <TextBox x:Name="sleevsbottom" HorizontalAlignment="Left" Margin="372,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" RenderTransformOrigin="-3.604,-0.2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,198,0,0" Text="Shoulder" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="shoulder" HorizontalAlignment="Left" Margin="73,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" />
+        <TextBlock HorizontalAlignment="Left" Margin="138,198,0,0" Text="Waist Length" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="282,198,0,0" Text="Hipp Length" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="440,153,0,0" Text="Front Neck" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="440,198,0,0" Text="Back Neck" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="backneck" HorizontalAlignment="Left" Margin="503,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <TextBox x:Name="hipp" HorizontalAlignment="Left" Margin="617,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <TextBox x:Name="waist" HorizontalAlignment="Left" Margin="617,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <TextBox x:Name="chest" HorizontalAlignment="Left" Margin="73,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <TextBlock HorizontalAlignment="Left" Margin="138,241,0,0" Text="Upper Chest" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="upperchest" HorizontalAlignment="Left" Margin="217,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <TextBlock HorizontalAlignment="Left" Margin="282,241,0,0" Text="Dotpoint" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="dotpoint" HorizontalAlignment="Left" Margin="372,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,301,0,0" Text="Measurement of Pant" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,341,0,0" Text="Length" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="lenght1" HorizontalAlignment="Left" Margin="65,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <TextBlock HorizontalAlignment="Left" Margin="138,341,0,0" Text="Bottom" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="bottom" HorizontalAlignment="Left" Margin="187,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,396,0,0" Text="Knee" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="knee" HorizontalAlignment="Left" Margin="65,387,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" RenderTransformOrigin="-4.396,3.005"/>
+        <TextBlock HorizontalAlignment="Left" Margin="271,341,0,0" Text="Thighs" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="thighs" HorizontalAlignment="Left" Margin="322,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="138,396,0,0" Text="Waist" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-11.379,4.01"/>
+        <TextBox x:Name="waist1" HorizontalAlignment="Left" Margin="185,387,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <Button HorizontalAlignment="Left" Margin="538,404,0,0" VerticalAlignment="Top" Background="{x:Null}" Width="48" Click="Button_Click_1">
+            <materialDesign:PackIcon Kind="Add"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="452,404,0,0" VerticalAlignment="Top" Click="Button_Click" Background="{x:Null}">
+            <materialDesign:PackIcon Kind="DeleteCircle"/>
+        </Button>
+        <RadioButton x:Name="top" Content="Top" HorizontalAlignment="Left" Margin="217,117,0,0" VerticalAlignment="Top" BorderBrush="Black"/>
+        <RadioButton x:Name="blouse" Content="Blouse" HorizontalAlignment="Left" Margin="282,117,0,0" VerticalAlignment="Top" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="360,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Text="No. of Order"/>
+        <TextBox x:Name="orders" HorizontalAlignment="Left" Margin="451,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
+        <TextBlock HorizontalAlignment="Left" Margin="365,118,0,0" Text="No. of Top/Blouse" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="TOPorBLOUSE" HorizontalAlignment="Left" Margin="472,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <TextBlock HorizontalAlignment="Left" Margin="158,301,0,0" Text="No. of Pant" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="pant" HorizontalAlignment="Left" Margin="223,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <GridSplitter HorizontalAlignment="Left" Height="938" Margin="344,-362,0,0" VerticalAlignment="Top" Width="3" RenderTransformOrigin="0.5,0.5">
+            <GridSplitter.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </GridSplitter.BorderBrush>
+            <GridSplitter.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.109"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </GridSplitter.RenderTransform>
+        </GridSplitter>
+        <DatePicker x:Name="tdate" HorizontalAlignment="Left" Margin="576,77,0,0" VerticalAlignment="Top" Width="96"  AllowDrop="True" Cursor="Hand" AutomationProperties.Name="date"/>
+        <TextBlock HorizontalAlignment="Left" Margin="534,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" Text="Date"/>
+        <Button x:Name="add" HorizontalAlignment="Left" Margin="628,404,0,0" VerticalAlignment="Top" Click="Button_Click_3" Background="{x:Null}">
+            <materialDesign:PackIcon Kind="Printer"/>
+        </Button>
+       
+    </Grid>
+</UserControl>
